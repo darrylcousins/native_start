@@ -1,22 +1,18 @@
-How I got this started
-======================
+# Me Getting Started With React Native
 
-My initial beginnings with `React Native`_ was to use Expo_. However I struck a
+My initial beginnings with React Native was to use Expo. However I struck a
 header rendering problem that I was unable to solve. In an effort to get away
-from the problem I took a whole new track to use `React Native`_ in a more bare
+from the problem I took a whole new track to use React Native in a more bare
 bones way.
 
-I pretty much followed this: `Setting up React Native development on Linux
-without installing Android Studio
-<https://medium.com/@khairold/setting-up-react-native-on-linux-without-android-studio-a65f3e011bbb>`_.
+I pretty much followed this: [Setting up React Native development on Linux
+without installing Android Studio](https://medium.com/@khairold/setting-up-react-native-on-linux-without-android-studio-a65f3e011bbb>).
 
-Java
-----
+## Java
 
 I did need to install `openjdk-devel` and set `$PATH`.
 
-Android SDK
------------
+## Android SDK
 
 All went well enough, bit of time spent working out ownership and permissions.
 No `udev` group and on my single user machine I used `wheel` as my go to group. So that running::
@@ -25,10 +21,9 @@ No `udev` group and on my single user machine I used `wheel` as my go to group. 
 
 would work without permission problems.
 
-Yarn
-----
+## Yarn
 
-Just started using yarn_ with this project. Simple removed `package-lock.json` whenever mentioned.
+Just started using yarn with this project. Simple removed `package-lock.json` whenever mentioned.
 
 Did need to::
 
@@ -39,17 +34,15 @@ And add the following to `.eslintrc.json`::
   "parser": "babel-eslint"
 
 
-HTC One Phone
--------------
+## HTC One Phone
 
 Instructions to set up phone with developer options was straightforward enough.
 Initially `adb devices` did not show the device - sure enough, with the third
 usb cable it all worked well.
 
-ESLint
-------
+## ESLint
 
-I installed ESLint_ globally::
+I installed ESLint_globally::
 
    sudo npm install -g eslint
 
@@ -63,10 +56,9 @@ Usage::
 
    ./node_modules/eslint/bin/eslint.js App.js
 
-React Native and Native Base
-============================
+# React Native and Native Base
 
-Use `react-native`_ to start the app::
+Use react-native to start the app::
 
    react-native init my_app
    cd my_app
@@ -76,8 +68,7 @@ Use `react-native`_ to start the app::
    yarn add react-native-gesture-handler
    react-native link react-native-gesture-handler
 
-Customising Theme
------------------
+## Customising Theme
 
 This was really quite significant::
 
@@ -97,10 +88,9 @@ Which allows this because it copies theme directory to local app::
       );
    }}
 
-Amplify
--------
+## Amplify
 
-I'm storing data on Amazon DynamoDB_ and using GraphQL_ queries via Amplify_ to
+I'm storing data on Amazon DynamoDB and using GraphQL queries via Amplify to
 access the data. To do that from here::
 
    amplify init
