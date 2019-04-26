@@ -1,0 +1,25 @@
+{
+  "name": "create-recipes",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: No test specified.\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Darryl Cousins <darryljcousins@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/darrylcousins/native_start.git",
+  "bin": {
+    "scaffold": "index.js"
+  },
+  "dependencies": {
+    "caporal": "^0.3.0",
+    "colors": "^1.1.2",
+    "prompt": "^1.0.0",
+    "shelljs": "^0.7.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-react": "^7.12.4"
+  }
+}

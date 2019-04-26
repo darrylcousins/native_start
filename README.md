@@ -42,7 +42,7 @@ usb cable it all worked well.
 
 ## ESLint
 
-I installed ESLint_globally::
+I installed ESLint globally::
 
    sudo npm install -g eslint
 
