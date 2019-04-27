@@ -15,9 +15,11 @@ I did need to install `openjdk-devel` and set `$PATH`.
 ## Android SDK
 
 All went well enough, bit of time spent working out ownership and permissions.
-No `udev` group and on my single user machine I used `wheel` as my go to group. So that running::
+No `udev` group and on my single user machine I used `wheel` as my go to group. So that running:
 
+```shell
    adb devices
+```
 
 would work without permission problems.
 
@@ -25,11 +27,11 @@ would work without permission problems.
 
 Just started using yarn with this project. Simple removed `package-lock.json` whenever mentioned.
 
-Did need to::
+Did need to:
 
    yarn add -D babel-eslint
 
-And add the following to `.eslintrc.json`::
+And add the following to `.eslintrc.json`:
 
   "parser": "babel-eslint"
 
@@ -42,23 +44,23 @@ usb cable it all worked well.
 
 ## ESLint
 
-I installed ESLint globally::
+I installed ESLint globally:
 
    sudo npm install -g eslint
 
-Set up a configuration file::
+Set up a configuration file:
 
   eslint --init
 
 I choose `AirBNB` style guide, opinioniated, with React support.
 
-Usage::
+Usage:
 
    ./node_modules/eslint/bin/eslint.js App.js
 
 # React Native and Native Base
 
-Use react-native to start the app::
+Use react-native to start the app:
 
    react-native init my_app
    cd my_app
@@ -70,12 +72,13 @@ Use react-native to start the app::
 
 ## Customising Theme
 
-This was really quite significant::
+This was really quite significant:
 
    node node_modules/native-base/ejectTheme.js
 
-Which allows this because it copies theme directory to local app::
+Which allows this because it copies theme directory to local app:
 
+```javascript
    import getTheme from './native-base-theme/components';
    import variables from "./native-base-theme/variables/commonColor";
 
@@ -87,11 +90,12 @@ Which allows this because it copies theme directory to local app::
          </StyleProvider>
       );
    }}
+```
 
 ## Amplify
 
 I'm storing data on Amazon DynamoDB and using GraphQL queries via Amplify to
-access the data. To do that from here::
+access the data. To do that from here:
 
    amplify init
    amplify add codegen --apiId ******
@@ -99,7 +103,7 @@ access the data. To do that from here::
 
 The files `src/aws-exports.js` and `src/graphql/*.js` have been created.
 
-And add library::
+And add library:
 
    yarn add aws-amplify
 
