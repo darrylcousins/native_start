@@ -29,11 +29,15 @@ Just started using yarn with this project. Simple removed `package-lock.json` wh
 
 Did need to:
 
+```shell
    yarn add -D babel-eslint
+```
 
 And add the following to `.eslintrc.json`:
 
+```json
   "parser": "babel-eslint"
+```
 
 
 ## HTC One Phone
@@ -46,22 +50,29 @@ usb cable it all worked well.
 
 I installed ESLint globally:
 
+```shell
    sudo npm install -g eslint
+```
 
 Set up a configuration file:
 
+```shell
   eslint --init
+```
 
 I choose `AirBNB` style guide, opinioniated, with React support.
 
 Usage:
 
+```shell
    ./node_modules/eslint/bin/eslint.js App.js
+```
 
 # React Native and Native Base
 
 Use react-native to start the app:
 
+```shell
    react-native init my_app
    cd my_app
    react-native link
@@ -69,12 +80,15 @@ Use react-native to start the app:
    yarn add react-navigation
    yarn add react-native-gesture-handler
    react-native link react-native-gesture-handler
+```
 
 ## Customising Theme
 
 This was really quite significant:
 
+```shell
    node node_modules/native-base/ejectTheme.js
+```
 
 Which allows this because it copies theme directory to local app:
 
@@ -97,18 +111,16 @@ Which allows this because it copies theme directory to local app:
 I'm storing data on Amazon DynamoDB and using GraphQL queries via Amplify to
 access the data. To do that from here:
 
+```shell
    amplify init
    amplify add codegen --apiId ******
    amplify codegen
+```
 
 The files `src/aws-exports.js` and `src/graphql/*.js` have been created.
 
 And add library:
 
+```shell
    yarn add aws-amplify
-
-.. _React Native: https://facebook.github.io/react-native/
-.. _Expo: https://expo.io
-.. _yarn: https://yarnpkg.com
-
-
+```
