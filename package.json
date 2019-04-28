@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "semistandard \"\" && jest"
+    "test": "semistandard \"!./templates/\" && jest"
   },
   "keywords": [],
   "author": "Darryl Cousins <darryljcousins@gmail.com>",
