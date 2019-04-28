@@ -1,4 +1,4 @@
-# Me Getting Started With React Native
+# Native Start
 
 My initial beginnings with React Native was to use Expo. However I struck a
 header rendering problem that I was unable to solve. In an effort to get away

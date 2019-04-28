@@ -1,14 +1,17 @@
 {
-  "name": "create-recipes",
+  "name": "native-start",
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: No test specified.\" && exit 1"
+    "test": "semistandard \"\" && jest"
   },
   "keywords": [],
   "author": "Darryl Cousins <darryljcousins@gmail.com>",
   "license": "ISC",
-  "repository": "https://github.com/darrylcousins/native_start.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darrylcousins/native_start.git"
+  },
   "bin": {
     "scaffold": "index.js"
   },
@@ -20,6 +23,15 @@
   },
   "devDependencies": {
     "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.12.4"
+    "eslint-plugin-react": "^7.12.4",
+    "jest": "^24.7.1",
+    "semistandard": "^13.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/darrylcousins/native_start/issues"
+  },
+  "homepage": "https://github.com/darrylcousins/native_start#readme",
+  "directories": {
+    "lib": "lib"
   }
 }
