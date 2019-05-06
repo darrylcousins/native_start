@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "index.js",
   "scripts": {
-    "test": "semistandard \"!./templates/\" && jest"
+    "test": "semistandard \"!./templates/\" \"./lib/*.js\" && jest"
   },
   "keywords": [],
   "author": "Darryl Cousins <darryljcousins@gmail.com>",
@@ -22,8 +22,6 @@
     "shelljs": "^0.7.7"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-plugin-react": "^7.12.4",
     "jest": "^24.7.1",
     "semistandard": "^13.0.1"
   },

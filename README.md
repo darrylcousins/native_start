@@ -1,4 +1,4 @@
-# Native Start
+# Background
 
 My initial beginnings with React Native was to use Expo. However I struck a
 header rendering problem that I was unable to solve. In an effort to get away
@@ -23,6 +23,37 @@ No `udev` group and on my single user machine I used `wheel` as my go to group. 
 
 would work without permission problems.
 
+
+## HTC One Phone
+
+Instructions to set up phone with developer options was straightforward enough.
+Initially `adb devices` did not show the device - sure enough, with the third
+usb cable it all worked well.
+
+# This Scaffold Project
+
+First goal is to be able to scaffold a `react-native` project with some extra bits.
+
+I pretty much followed this tutorial: [Create Your Own Yeoman-Style Scaffolding Tool
+with Caporal.js](https://www.sitepoint.com/scaffolding-tool-caporal-js/) to
+build this project.
+
+## ESLint
+
+Set up a configuration file:
+
+```shell
+  eslint --init
+```
+
+I choose `AirBNB` style guide, opinioniated, with React support.
+
+Usage:
+
+```shell
+   ./node_modules/eslint/bin/eslint.js App.js
+```
+
 ## Yarn
 
 Just started using yarn with this project. Simple removed `package-lock.json` whenever mentioned.
@@ -37,35 +68,6 @@ And add the following to `.eslintrc.json`:
 
 ```json
   "parser": "babel-eslint"
-```
-
-
-## HTC One Phone
-
-Instructions to set up phone with developer options was straightforward enough.
-Initially `adb devices` did not show the device - sure enough, with the third
-usb cable it all worked well.
-
-## ESLint
-
-I installed ESLint globally:
-
-```shell
-   sudo npm install -g eslint
-```
-
-Set up a configuration file:
-
-```shell
-  eslint --init
-```
-
-I choose `AirBNB` style guide, opinioniated, with React support.
-
-Usage:
-
-```shell
-   ./node_modules/eslint/bin/eslint.js App.js
 ```
 
 # React Native and Native Base
