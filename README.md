@@ -34,10 +34,6 @@ usb cable it all worked well.
 
 First goal is to be able to scaffold a `react-native` project with some extra bits.
 
-I pretty much followed this tutorial: [Create Your Own Yeoman-Style Scaffolding Tool
-with Caporal.js](https://www.sitepoint.com/scaffolding-tool-caporal-js/) to
-build this project.
-
 ## ESLint
 
 Set up a configuration file:
