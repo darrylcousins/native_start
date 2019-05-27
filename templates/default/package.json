@@ -6,7 +6,7 @@
   "description": "[DESCRIPTION]",
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "semistandard \"*.js\""
   },
   "dependencies": {
     "native-base": "^2.12.1",
@@ -26,7 +26,8 @@
     "eslint-plugin-react": "^7.12.4",
     "jest": "^24.7.1",
     "metro-react-native-babel-preset": "^0.53.1",
-    "react-test-renderer": "16.8.3"
+    "react-test-renderer": "16.8.3",
+    "semistandard": "^13.0.1"
   },
   "jest": {
     "preset": "react-native"
