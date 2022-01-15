@@ -19,7 +19,7 @@
     "caporal": "^0.3.0",
     "colors": "^1.1.2",
     "prompt": "^1.0.0",
-    "shelljs": "^0.7.7"
+    "shelljs": "^0.8.5"
   },
   "devDependencies": {
     "jest": "^24.7.1",
